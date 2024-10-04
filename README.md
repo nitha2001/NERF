@@ -53,3 +53,18 @@ train_2d_model(): Trains the 2D model using MSE loss and saves the results. It a
 
 - `plot_all_poses()`: Visualizes or processes camera poses in 3D space to better understand the position and orientation of the camera relative to the scene.
 
+## Results
+
+<img width="510" alt="Network Architecture" src="https://github.com/user-attachments/assets/ed4b6f22-9f68-422d-afe8-ab177ee50725">
+
+![iter 0](https://github.com/user-attachments/assets/279f8537-4fa1-4c94-b779-f91cafd89bf7)
+
+![it 1000](https://github.com/user-attachments/assets/adf41859-c0e0-4d71-8797-919453262132)
+
+![it 2000](https://github.com/user-attachments/assets/2d3dcefb-79fc-4e60-a1da-afbfc6039330)
+
+![it 3000](https://github.com/user-attachments/assets/6beafbc0-a554-4bf6-aa3b-c05f7732e329)
+
+
+
+
