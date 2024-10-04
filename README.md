@@ -4,10 +4,10 @@ This repository contains the implementation for my final project in the course C
 ## Overview
 The project is divided into two main parts:
 
-**2D Image Fitting**
+- **2D Image Fitting**
 We first tackle the problem of image representation using a Multilayer Perceptron (MLP) and positional encoding. The goal is to fit a given 2D image by learning a neural representation, which captures the fine details of the image across spatial coordinates.
 
-**3D Scene Fitting and Novel View Rendering**
+- **3D Scene Fitting and Novel View Rendering**
 In this part, we extend the neural representation from 2D to 3D scenes using the NeRF framework. By sampling rays and applying volume rendering, we aim to fit a 3D scene and generate novel views of the scene.
 
 ## Project Components
