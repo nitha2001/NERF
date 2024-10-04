@@ -32,11 +32,24 @@ In the 3D part of the project, rays are cast through the scene, and samples are 
 The neural representation allows for rendering novel views of the 3D scene from different perspectives, demonstrating the power of NeRF for photorealistic scene synthesis.
 
 ## Associated Files and Functions
-- `image_fitting.py`: Implements the MLP and positional encoding for 2D image fitting.
-- `nerf_scene.py`: Contains functions for 3D scene fitting, ray sampling, and NeRF model setup.
-- `positional_encoding.py`: Handles the positional encoding for both 2D and 3D inputs.
-- `render.py`: Responsible for volume rendering and synthesizing novel views of the 3D scene.
-- `data_loader.py`: Manages loading of input images and scenes for the model.
-- `train.py`: Script for training the MLP and NeRF models, logging results.
-- `utils.py`: Contains helper functions for visualization, loss computation, and metric evaluation.
+**Part 1 - 2D Image Fitting:**
+positional_encoding(): Encodes input using sine and cosine functions.
+model_2d: Defines a simple 2D neural network model with fully connected layers, ReLU, and sigmoid activations.
+normalize_coord(): Generates and normalizes 2D coordinates, applies positional encoding.
+train_2d_model(): Trains the 2D model using MSE loss and saves the results. It also plots loss metrics and model predictions.
+
+**Part 2 - 3D Scene Fitting (LEGO Data):**
+- `positional_encoding()`: Encodes input using sine and cosine functions to capture different frequency information for higher-dimensional input representation.
+
+- `get_rays()`: Computes the origins and directions of rays for each pixel in the image based on camera intrinsics and the camera pose (extrinsics).
+
+- `stratified_sampling()`: Samples 3D points along the rays between the near and far bounds, adding randomness for better coverage of the scene.
+
+- `volumetric_rendering()`: Performs volumetric rendering by integrating the colors and densities along the rays to form the final 2D image.
+
+- `get_batches()`: Divides the input 3D points and directions into smaller batches and applies positional encoding to ensure efficient processing during model inference.
+
+- `one_forward_pass()`: Executes a single forward pass through the model, calculating rays, sampling 3D points, and rendering the scene to generate an image from the given camera pose.
+
+- `plot_all_poses()`: Visualizes or processes camera poses in 3D space to better understand the position and orientation of the camera relative to the scene.
 
