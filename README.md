@@ -33,9 +33,9 @@ The neural representation allows for rendering novel views of the 3D scene from 
 
 ## Associated Files and Functions
 **Part 1 - 2D Image Fitting:**
-positional_encoding(): Encodes input using sine and cosine functions.
+- `positional_encoding()`: Encodes input using sine and cosine functions.
 model_2d: Defines a simple 2D neural network model with fully connected layers, ReLU, and sigmoid activations.
-normalize_coord(): Generates and normalizes 2D coordinates, applies positional encoding.
+- `normalize_coord()`: Generates and normalizes 2D coordinates, applies positional encoding.
 train_2d_model(): Trains the 2D model using MSE loss and saves the results. It also plots loss metrics and model predictions.
 
 **Part 2 - 3D Scene Fitting (LEGO Data):**
