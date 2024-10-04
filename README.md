@@ -30,3 +30,13 @@ In the 3D part of the project, rays are cast through the scene, and samples are 
 
 **Rendering Novel Views**
 The neural representation allows for rendering novel views of the 3D scene from different perspectives, demonstrating the power of NeRF for photorealistic scene synthesis.
+
+## Associated Files and Functions
+- `image_fitting.py`: Implements the MLP and positional encoding for 2D image fitting.
+- `nerf_scene.py`: Contains functions for 3D scene fitting, ray sampling, and NeRF model setup.
+- `positional_encoding.py`: Handles the positional encoding for both 2D and 3D inputs.
+- `render.py`: Responsible for volume rendering and synthesizing novel views of the 3D scene.
+- `data_loader.py`: Manages loading of input images and scenes for the model.
+- `train.py`: Script for training the MLP and NeRF models, logging results.
+- `utils.py`: Contains helper functions for visualization, loss computation, and metric evaluation.
+
